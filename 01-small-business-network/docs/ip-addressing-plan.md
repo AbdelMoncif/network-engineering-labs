@@ -5,7 +5,7 @@
 The allocated address block is 192.168.1.0/24. It is divided into three /26 subnets, one for each department.
 
 | Department     |    Network       |   Subnet Mask   | Usable Host Range           | Broadcast     | Default Gateway |
-|---------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|---|
 | Sales          | 192.168.1.0/26   | 255.255.255.192 | 192.168.1.1–192.168.1.62    | 192.168.1.63  | 192.168.1.1     |
 | Finance        | 192.168.1.64/26  | 255.255.255.192 | 192.168.1.65–192.168.1.126  | 192.168.1.127 | 192.168.1.65    |
 | Administration | 192.168.1.128/26 | 255.255.255.192 | 192.168.1.129–192.168.1.190 | 192.168.1.191 | 192.168.1.129   |
@@ -15,7 +15,7 @@ The allocated address block is 192.168.1.0/24. It is divided into three /26 subn
 DHCP dynamically assigns IPv4 addresses to departmental workstations. Reserve gateway addresses have been excluded from the pools
 
 | Department     | DHCP Pool                     |
-|------------------------------------------------|
+|---|---|
 | Sales          | 192.168.1.2 – 192.168.1.62    |
 | Finance        | 192.168.1.66 – 192.168.1.126  |
 | Administration | 192.168.1.130 – 192.168.1.190 |
