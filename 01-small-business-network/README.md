@@ -17,4 +17,4 @@ Using seperate subnets provides distinct Layer 3 networks for each departement a
 For the sake of this lab I did not prevent departments from communicating with each other, as that would require additional security configurations which I will display in other labs.
 
 ## Addressing Plan : 
-see docs/ip-addressing-plan.md
+See [IP Addressing Plan](docs/ip-addressing-plan.md).
