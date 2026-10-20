@@ -12,7 +12,7 @@
 |---|---|---|---|---|---|---|
 | T01 | DHCP assignment | Administration PC | DHCP server/router | Valid address, mask, gateway | [Recorded Output](../tests/dhcp-assignment.png) | TESTED |
 | T02 | Default gateway reachability | Administration PC | Sales gateway | Successful ping | [Recorded Output](../tests/gateway-connectivity.png) | TESTED |
-| T03 | Same-subnet connectivity | Administration PC | Another Sales PC | Successful ping | [Recorded Output](../tests/same-subnet-connectivity.png) | TESTED |
+| T03 | Same-subnet connectivity | Administration PC | Another Sales PC | Successful ping | [Recorded Output](../tests/same-subnet-connectivpn) | TESTED |
 | T04 | Inter-subnet routing | Administration PC | Finance PC | Successful ping | [Recorded Output](../tests/inter-subnet-connectivity.png) | TESTED |
 
 
