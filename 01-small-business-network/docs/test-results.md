@@ -41,6 +41,8 @@ Output :
 | C | 192.168.1.64 is directly connected | GigabitEthernet2/0 |
 | C | 192.168.1.128 is directly connected | GigabitEthernet3/0 |
 
+[Recorded Output](../tests/routing.png)
+
 ## 4. Issues Encountered
 
 No Issues were encountered during this lab.
