@@ -26,4 +26,4 @@ DHCP dynamically assigns IPv4 addresses to departmental workstations. Reserve ga
 - Each department has a separate /26 subnet with 62 usable IPv4 addresses.
 - The three allocated subnets do not overlap with each other.
 - The 192.168.1.192/26 subnet remains available for a future expansion.
-- Separate subnets provide logical segmentation but do not enforce access restrictions by themselves.
+- Separate subnets provide logical segmentation but do not enforce access restrictions as it was not part of the lab objective.
