@@ -22,13 +22,13 @@
 
 Command: `ipconfig /all`
 
-Output of intrest: DHCP Servers....................: 192.168.1.129
+Output of intrest: `DHCP Servers .................... : 192.168.1.129`
 
 ### Gateway and Routing
 
 Command: `ping 192.168.1.129`
 
-Output : Ping statistics for 192.168.1.129:  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
+Output : `Ping statistics for 192.168.1.129:  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)`
 
 ### Routing Table
 
