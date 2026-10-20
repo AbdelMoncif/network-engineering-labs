@@ -18,3 +18,7 @@ For the sake of this lab I did not prevent departments from communicating with e
 
 ## Addressing Plan : 
 See [IP Addressing Plan](docs/ip-addressing-plan.md).
+
+
+## Topology : 
+See [topology](docs/topology.png).
