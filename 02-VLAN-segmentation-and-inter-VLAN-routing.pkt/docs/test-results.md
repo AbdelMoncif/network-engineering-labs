@@ -54,5 +54,5 @@
 
 - Tests performed: [8]
 - Tests passed: [8]
-- Tests failed: [8]
+- Tests failed: [0]
 
