@@ -45,7 +45,7 @@ A second switch connects to the primary switch through an 802.1Q trunk and exten
 
 ## Network Topology
 
-![Network topology](evidence/topology.png)
+![Network topology](docs/topology.png)
 
 ## VLAN and IP Addressing Plan
 
@@ -53,7 +53,7 @@ See [VLAN and IP Addressing Plan](docs/vlan-and-ip-addressing-plan.md).
 
 ## Configuration and Implementation
 
-The Packet Tracer simulation is provided in `vlan-trunking-router-on-a-stick.pkt`.
+The Packet Tracer simulation is provided in `02-VLAN-segmentation-and-inter-VLAN-routing.pkt`.
 
 The implementation covers VLAN creation, access-port assignment, trunk configuration, router subinterfaces, DHCP pools, and native VLAN testing.
 
@@ -61,12 +61,10 @@ The implementation covers VLAN creation, access-port assignment, trunk configura
 
 See [Test Results](docs/test-results.md) for the VLAN, trunking, DHCP, routing, and connectivity verification results.
 
-Only tests actually performed are marked as passed.
-
 ## Lessons Learned
 
 - VLANs create separate Layer 2 broadcast domains, while inter-VLAN communication requires Layer 3 routing.
-- 802.1Q trunks carry traffic for multiple VLANs over a single physical link using VLAN tags, except for traffic belonging to the configured native VLAN.
+- 802.1Q trunks carry traffic for multiple VLANs over a single physical link using VLAN tags, except for traffic belonging to the configured native VLAN as those are tagless.
 - Router subinterfaces allow one physical router interface to serve multiple IP networks.
 - Native VLAN configuration must be consistent across the relevant trunk endpoints to avoid VLAN mismatches.
 - Verification commands and end-to-end tests help identify configuration errors across switches and the router.
