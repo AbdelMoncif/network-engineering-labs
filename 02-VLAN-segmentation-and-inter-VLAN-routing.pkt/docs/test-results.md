@@ -28,19 +28,19 @@
 
 ### Trunk verification
 
-![vlan brief](../tests/show-interfaces-trunk.png)
+![trunk verification](../tests/show-interfaces-trunk.png)
 
 ### DHCP verification
 
-![vlan brief](../tests/dhcp.png)
+![dhcp verification](../tests/dhcp.png)
 
 ### Inter-VLAN connectivity
 
-![vlan brief](../tests/inter-vlan-connectivity.png)
+![inter vlan ping](../tests/inter-vlan-connectivity.png)
 
 ### Native VLAN forwarding
 
-![vlan brief](../tests/natives-connectivity.png)
+![native vlan ping](../tests/natives-connectivity.png)
 
 ## 4. Troubleshooting Log
 
