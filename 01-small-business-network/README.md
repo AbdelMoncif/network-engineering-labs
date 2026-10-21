@@ -21,4 +21,4 @@ See [IP Addressing Plan](docs/ip-addressing-plan.md).
 
 
 ## Topology : 
-See [topology](docs/topology.png).
+![topology](docs/topology.png).
