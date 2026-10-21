@@ -16,9 +16,9 @@
 | T03 | Trunk operation | `show interfaces trunk` | Required VLANs are allowed and active | [see result](../tests/show-interfaces-trunk.png) | TESTED |
 | T04 | Native VLAN configuration | `show interfaces trunk` | Native VLAN is 99 on the inter-switch trunk | [see result](../tests/show-interfaces-trunk.png) | TEST |
 | T05 | DHCP assignment | `ipconfig /all` | Each departmental PC receives an address from its correct subnet | [see result](../tests/dhcp.png) | TESTED |
-| T06 | Gateway reachability | `ping <gateway-ip>` | Workstation reaches its own gateway | [see result](../tests/show-interfaces-trunk.png) | TESTED |
-| T07 | Inter-VLAN routing | Ping between departmental PCs | Communication succeeds when routing and policies permit | Pending | NOT TESTED |
-| T08 | Native VLAN connectivity | Ping between VLAN 99 PCs | Static-IP PCs on different switches communicate | Pending | NOT TESTED |
+| T06 | Gateway reachability | `ping 192.168.10.1` | Workstation reaches its own gateway | [see result](../tests/ping-gateway.png) | TESTED |
+| T07 | Inter-VLAN routing | Ping between departmental PCs | Communication succeeds when routing and policies permit | [see result](../tests/inter-vlan-connectivity.png) | TESTED |
+| T08 | Native VLAN connectivity | Ping between VLAN 99 PCs | Static-IP PCs on different switches communicate | [see result](../tests/natives-connectivity.png) | TESTED |
 
 ## 3. Tests
 
