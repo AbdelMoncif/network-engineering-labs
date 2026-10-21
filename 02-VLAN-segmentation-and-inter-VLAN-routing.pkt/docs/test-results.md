@@ -45,15 +45,14 @@
 ## 4. Troubleshooting Log
 
 - **Problem:** A mismatch in the vlans over the native trunk connection, switch 2 native trunk is configured for vlan 99, while switch 1 retained the default vlan 1 configuration
+![see result](../tests/vlan-native-consistency-error.png)
 - **Diagnosis:** Interface has been blocked and a port inconsistency error displayed on the switch cli
 - **Resolution:** Reconfiguring fa/24 interface to vlan 99
 
 
 ## 5. Summary
 
-- Tests performed: [Fill in]
-- Tests passed: [Fill in]
-- Tests failed: [Fill in]
-- Tests not performed: [Fill in]
+- Tests performed: [8]
+- Tests passed: [8]
+- Tests failed: [8]
 
-Only mark a test as PASS after observing and verifying its actual result.
