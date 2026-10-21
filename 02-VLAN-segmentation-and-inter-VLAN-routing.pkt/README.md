@@ -49,7 +49,7 @@ A second switch connects to the primary switch through an 802.1Q trunk and exten
 
 ## VLAN and IP Addressing Plan
 
-See [VLAN and IP Addressing Plan](docs/vlan-and-ip-addressing-plan.md).
+See [VLAN and IP Addressing Plan](docs/ip-addressing-plan.md).
 
 ## Configuration and Implementation
 
