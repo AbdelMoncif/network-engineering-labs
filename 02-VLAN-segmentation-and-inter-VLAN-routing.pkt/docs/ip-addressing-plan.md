@@ -13,7 +13,7 @@ VLANs 10, 20, and 30 are assigned separate IPv4 networks. VLAN 99 is used to tes
 
 ## 2. IPv4 Address Allocation
 
-The following table illustrates the addressing scheme. Verify the subnet masks and gateway addresses against the actual Packet Tracer configuration.
+The following table illustrates the addressing scheme.
 
 | VLAN | Network | Subnet Mask | Default Gateway | Address Assignment |
 |---|---|---|---|---|
@@ -42,12 +42,11 @@ Example static configuration:
 
 | Device | IPv4 Address | Subnet Mask |
 |---|---|---|
-| Native VLAN test PC on SW1 | 192.168.99.10 | 255.255.255.0 |
-| Native VLAN test PC on SW2 | 192.168.99.11 | 255.255.255.0 |
+| Native VLAN test PC on SW1 | 192.168.99.1 | 255.255.255.0 |
+| Native VLAN test PC on SW2 | 192.168.99.2 | 255.255.255.0 |
 
 Both test PCs belong to the same IP network. A default gateway is unnecessary for testing communication between these PCs on the same subnet.
 
-These are example addresses. Replace them with the addresses actually configured in your simulation.
 
 ## 5. Trunk Configuration Notes
 
