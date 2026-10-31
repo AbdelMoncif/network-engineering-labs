@@ -86,7 +86,7 @@ switchport mode trunk
 switchport trunk allowed vlan 10,20, 99
 ```
 
-Where required, trunk configuration is applied to the logical Port-Channel interface rather than independently configuring incompatible settings on its member interfaces.
+Where required, trunk configuration is applied to the logical Port-Channel interface rather than separately configuring the physical ports.
 
 ## 4. STP VLAN Availability Troubleshooting
 
@@ -96,9 +96,7 @@ The following message was encountered:
 No spanning tree instance exists.
 ```
 
-This prompted an investigation of VLAN availability and STP operation.
-
-Relevant checks include:
+Relevant checks:
 
 ```cisco
 show vlan brief
@@ -107,7 +105,7 @@ show spanning-tree vlan 10
 show spanning-tree vlan 20
 ```
 
-VLANs must be created and active on the relevant switches, and the trunk links must allow the VLANs to traverse the network.
+VLANs must be created and active on all the relevant switches.
 
 
-Actual recovery behavior and convergence observations will be documented in the test results.
+Actual behavior will be documented in the test results.
