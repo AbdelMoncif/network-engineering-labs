@@ -10,10 +10,10 @@
 
 ## 2. Configuration Verification
 
-| ID | Test | Verification Command | Expected Result | Status |
+| ID | Test | Verification Command | Result | Status |
 |---|---|---|---|---|
 | T01 | VLAN creation | show vlan brief | VLANs 10 and 20 exist | NOT TESTED |
-| T02 | Access-port assignment | show vlan brief | Correct departmental VLAN membership | NOT TESTED |
+| T02 | Access-port assignment | show vlan brief | [See result](./tests/show-vlan-brief.png) | TESTED |
 | T03 | Trunk configuration | show interfaces trunk | Required VLANs allowed on trunks | NOT TESTED |
 | T04 | STP root VLAN 10 | show spanning-tree vlan 10 | Switch A is root | NOT TESTED |
 | T05 | STP root VLAN 20 | show spanning-tree vlan 20 | Switch B is root | NOT TESTED |
