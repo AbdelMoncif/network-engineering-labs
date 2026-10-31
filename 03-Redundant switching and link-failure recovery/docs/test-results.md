@@ -34,8 +34,8 @@
 
 | ID | Failure Scenario | Expected Behavior | Result | Status |
 |---|---|---|---|---|
-| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | [See result](../tests/single-etherchannel-ping.png) | TESTED |
-| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | [See result](../tests/double-etherchannel-ping.png) | TESTED |
+| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | [See result](../tests/single-etherchannel-shutdown-ping.png) | TESTED |
+| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | [See result](../tests/double-etherchannel-shutdown-ping.png) | TESTED |
 
 ## 5. Troubleshooting Records
 
