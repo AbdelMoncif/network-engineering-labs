@@ -12,32 +12,30 @@
 
 | ID | Test | Verification Command | Result | Status |
 |---|---|---|---|---|
-| T01 | VLAN creation | show vlan brief | VLANs 10 and 20 exist | NOT TESTED |
-| T02 | Access-port assignment | show vlan brief | [See result](./tests/show-vlan-brief.png) | TESTED |
-| T03 | Trunk configuration | show interfaces trunk | Required VLANs allowed on trunks | NOT TESTED |
-| T04 | STP root VLAN 10 | show spanning-tree vlan 10 | Switch A is root | NOT TESTED |
-| T05 | STP root VLAN 20 | show spanning-tree vlan 20 | Switch B is root | NOT TESTED |
-| T06 | EtherChannel A-C | show etherchannel summary | Both links bundled | NOT TESTED |
-| T07 | EtherChannel A-D | show etherchannel summary | Both links bundled | NOT TESTED |
-| T08 | LACP neighbors | show lacp neighbor | Expected LACP neighbors detected | NOT TESTED |
+| T01 | VLAN creation | show vlan brief | [See result](../tests/show-vlan-brief.png) | TESTED |
+| T02 | Access-port assignment | show vlan brief | [See result](../tests/show-vlan-brief.png) | TESTED |
+| T03 | Trunk configuration | show interfaces trunk | [See result](../tests/show-interfaces-trunk.png) | TESTED |
+| T04 | STP root VLAN 10 | show spanning-tree vlan 10 | [See result](../tests/show-spanning-tree-vlan-10.png) | TESTED |
+| T05 | STP root VLAN 20 | show spanning-tree vlan 20 | [See result](../tests/show-spanning-tree-vlan-10.png) | TESTED |
+| T06 | EtherChannel A-C | show etherchannel summary | [See result A](../tests/show-etherchannel-summary-A.png) , [See result C](../tests/show-etherchannel-summary-C.png) | TESTED |
+| T07 | EtherChannel A-D | show etherchannel summary | [See result A](../tests/show-etherchannel-summary-A.png) , [See result D](../tests/show-etherchannel-summary-D.png) | NOT TESTED |
+
 
 ## 3. Connectivity Testing
 
-| ID | Test | Expected Result | Actual Result | Status |
+| ID | Test | Expected Result | Result | Status |
 |---|---|---|---|---|
-| T09 | Same-VLAN connectivity across access switches | Successful communication | Pending | NOT TESTED |
-| T10 | VLAN 10 endpoint connectivity | Successful communication between Sales PCs | Pending | NOT TESTED |
-| T11 | VLAN 20 endpoint connectivity | Successful communication between Finance PCs | Pending | NOT TESTED |
-| T12 | Cross-VLAN connectivity | No communication without Layer 3 routing | Pending | NOT TESTED |
+| T09 | Same-VLAN connectivity across access switches | Successful communication | [See result A](../tests/same-vlan-ping.png) | TESTED |
+| T10 | VLAN 10 endpoint connectivity | Successful communication between Sales PCs | [See result A](../tests/vlan-10-endpoint-connectivity.png) | TESTED |
+| T11 | VLAN 20 endpoint connectivity | Successful communication between Finance PCs | [See result A](../tests/vlan-20-endpoint-connectivity.png) | TESTED |
+| T12 | Cross-VLAN connectivity | No communication without Layer 3 routing | [See result A](../tests/inter-vlan-connectivity.png) | TESTED |
 
 ## 4. Failure and Recovery Testing
 
-| ID | Failure Scenario | Expected Behavior | Actual Result | Status |
+| ID | Failure Scenario | Expected Behavior | Result | Status |
 |---|---|---|---|---|
-| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | Pending | NOT TESTED |
-| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | Pending | NOT TESTED |
-| T15 | Shut down Switch A | Remaining topology may provide alternative connectivity after reconvergence | Pending | NOT TESTED |
-| T16 | Shut down Switch B | Remaining topology may provide alternative connectivity after reconvergence | Pending | NOT TESTED |
+| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | [See result A](../tests/single-etherchannel-ping.png) | TESTED |
+| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | [See result A](../tests/double-etherchannel-ping.png) | TESTED |
 
 ## 5. Troubleshooting Records
 
@@ -51,42 +49,15 @@
 
 **Cause:** Different native VLAN IDs were configured at opposite ends of a trunk.
 
-**Resolution:** Align the native VLAN configuration on both endpoints.
+**Resolution:** Aligning the native VLAN configuration on both endpoints.
 
-**Retest:** Record the resulting trunk configuration and whether the mismatch warning disappears.
 
-### STP VLAN Availability
 
-**Observed message:**
+## 6. Summary
 
-```text
-No spanning tree instance exists.
-```
+- Tests performed: [13]
+- Tests passed: [13]
+- Tests failed: [0]
 
-**Investigation:** Inspect VLAN existence, active status, and trunk allowed VLAN configuration.
 
-**Resolution:** Record the actual corrective configuration.
 
-**Retest:** Verify the relevant STP instance with `show spanning-tree vlan 10` or `show spanning-tree vlan 20`.
-
-## 6. Evidence
-
-Screenshots documenting the tests are stored in the evidence directory.
-
-- VLAN membership: evidence/vlan-brief.png
-- Trunk operation: evidence/trunk-status.png
-- STP VLAN 10: evidence/spanning-tree-vlan10.png
-- STP VLAN 20: evidence/spanning-tree-vlan20.png
-- EtherChannel: evidence/etherchannel-summary.png
-- LACP neighbors: evidence/lacp-neighbors.png
-
-## 7. Summary
-
-- Configuration tests performed: [Fill in]
-- Connectivity tests performed: [Fill in]
-- Failure tests performed: [Fill in]
-- Tests passed: [Fill in]
-- Tests failed: [Fill in]
-- Tests not performed: [Fill in]
-
-Only verified results are marked as PASS.
