@@ -44,7 +44,7 @@ The distribution switches connect to both access switches through redundant path
 
 ## Network Topology
 
-![Enterprise Layer 2 topology](evidence/topology.png)
+![Enterprise Layer 2 topology](docs/topology.png)
 
 ## VLAN and IP Addressing
 
@@ -74,7 +74,7 @@ The bundles connect:
 - Switch A to Switch C.
 - Switch A to Switch D.
 
-This provides additional aggregate link capacity and resilience against individual member-link failures.
+This provides additional aggregate link capacity as vlan 10 contains more hosts.
 
 ## Configuration and Implementation
 
