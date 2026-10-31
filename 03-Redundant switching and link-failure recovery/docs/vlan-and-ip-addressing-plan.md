@@ -28,9 +28,7 @@ Communication between the two IP networks requires Layer 3 routing, which is out
 
 ## 4. Address Assignment
 
-The addressing plan identifies the departmental networks but does not prescribe individual workstation addresses.
-
-Record the actual workstation IP assignments from the Packet Tracer simulation here if static addressing is used, or document the DHCP configuration if implemented.
+The addressing was done statically as the DHCP implementation that is failure proof  would require HSRP configutation which is outside the scope of this lab.
 
 ## 5. Trunk VLAN Requirements
 
