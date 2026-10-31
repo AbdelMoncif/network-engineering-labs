@@ -25,17 +25,17 @@
 
 | ID | Test | Expected Result | Result | Status |
 |---|---|---|---|---|
-| T09 | Same-VLAN connectivity across access switches | Successful communication | [See result A](../tests/same-vlan-ping.png) | TESTED |
-| T10 | VLAN 10 endpoint connectivity | Successful communication between Sales PCs | [See result A](../tests/vlan-10-endpoint-connectivity.png) | TESTED |
-| T11 | VLAN 20 endpoint connectivity | Successful communication between Finance PCs | [See result A](../tests/vlan-20-endpoint-connectivity.png) | TESTED |
-| T12 | Cross-VLAN connectivity | No communication without Layer 3 routing | [See result A](../tests/inter-vlan-connectivity.png) | TESTED |
+| T09 | Same-VLAN connectivity across access switches | Successful communication | [See result](../tests/same-vlan-ping.png) | TESTED |
+| T10 | VLAN 10 endpoint connectivity | Successful communication between Sales PCs | [See result](../tests/vlan-10-endpoint-connectivity.png) | TESTED |
+| T11 | VLAN 20 endpoint connectivity | Successful communication between Finance PCs | [See result](../tests/vlan-20-endpoint-connectivity.png) | TESTED |
+| T12 | Cross-VLAN connectivity | No communication without Layer 3 routing | [See result](../tests/inter-vlan-connectivity.png) | TESTED |
 
 ## 4. Failure and Recovery Testing
 
 | ID | Failure Scenario | Expected Behavior | Result | Status |
 |---|---|---|---|---|
-| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | [See result A](../tests/single-etherchannel-ping.png) | TESTED |
-| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | [See result A](../tests/double-etherchannel-ping.png) | TESTED |
+| T13 | Disconnect one EtherChannel member | Remaining member maintains the logical link | [See result](../tests/single-etherchannel-ping.png) | TESTED |
+| T14 | Disconnect an entire EtherChannel | STP may transition an alternative path to forwarding | [See result](../tests/double-etherchannel-ping.png) | TESTED |
 
 ## 5. Troubleshooting Records
 
