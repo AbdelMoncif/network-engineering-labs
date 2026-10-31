@@ -18,7 +18,7 @@
 | T04 | STP root VLAN 10 | show spanning-tree vlan 10 | [See result](../tests/show-spanning-tree-vlan-10.png) | TESTED |
 | T05 | STP root VLAN 20 | show spanning-tree vlan 20 | [See result](../tests/show-spanning-tree-vlan-20.png) | TESTED |
 | T06 | EtherChannel A-C | show etherchannel summary | [See result A](../tests/show-etherchannel-summary-A.png) , [See result C](../tests/show-etherchannel-summary-C.png) | TESTED |
-| T07 | EtherChannel A-D | show etherchannel summary | [See result A](../tests/show-etherchannel-summary-A.png) , [See result D](../tests/show-etherchannel-summary-D.png) | NOT TESTED |
+| T07 | EtherChannel A-D | show etherchannel summary | [See result A](../tests/show-etherchannel-summary-A.png) , [See result D](../tests/show-etherchannel-summary-D.png) | TESTED |
 
 
 ## 3. Connectivity Testing
