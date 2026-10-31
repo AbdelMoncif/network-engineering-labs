@@ -45,7 +45,7 @@ These commands are used to inspect root bridge selection, port roles, port state
 
 ### Design
 
-LACP is used to aggregate two physical FastEthernet links into logical EtherChannel interfaces.
+LACP is used to aggregate two physical FastEthernet links into one logical EtherChannel interface.
 
 | Connection | Physical Links | Protocol |
 |---|---|---|
@@ -71,7 +71,6 @@ The corresponding configuration must be applied consistently on both ends, with 
 
 ```cisco
 show etherchannel summary
-show lacp neighbor
 ```
 
 The EtherChannel summary is used to verify that the logical channel is operational and that the physical member ports are bundled successfully.
