@@ -83,42 +83,12 @@ Example configuration:
 
 ```cisco
 switchport mode trunk
-switchport trunk allowed vlan 10,20
+switchport trunk allowed vlan 10,20, 99
 ```
 
 Where required, trunk configuration is applied to the logical Port-Channel interface rather than independently configuring incompatible settings on its member interfaces.
 
-## 4. Native VLAN Troubleshooting
-
-During configuration, a native VLAN mismatch warning was observed:
-
-```text
-%CDP-4-NATIVE_VLAN_MISMATCH
-```
-
-The warning indicated that the two ends of a trunk were configured with different native VLANs: VLAN 99 on one side and VLAN 1 on the other.
-
-### Diagnosis
-
-The trunk configuration was inspected using:
-
-```cisco
-show interfaces trunk
-```
-
-### Resolution
-
-The native VLAN must be configured consistently on both ends of each relevant trunk.
-
-Example:
-
-```cisco
-switchport trunk native vlan 99
-```
-
-For EtherChannel links, the trunk configuration should be consistent across the logical channel and both endpoints.
-
-## 5. STP VLAN Availability Troubleshooting
+## 4. STP VLAN Availability Troubleshooting
 
 The following message was encountered:
 
@@ -139,12 +109,5 @@ show spanning-tree vlan 20
 
 VLANs must be created and active on the relevant switches, and the trunk links must allow the VLANs to traverse the network.
 
-## 6. Failure Recovery and Future Testing
-
-Planned failure tests include:
-
-- Disconnecting one physical EtherChannel member to verify that the logical channel remains operational.
-- Disconnecting a complete EtherChannel to observe the alternative STP forwarding path.
-- Shutting down a distribution switch to observe STP reconvergence and connectivity recovery.
 
 Actual recovery behavior and convergence observations will be documented in the test results.
